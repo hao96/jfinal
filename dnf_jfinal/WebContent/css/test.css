@@ -1,0 +1,15 @@
+.login{
+	width: 1200px;
+	height: 10px;
+	background-color: darkgray;
+}
+
+table{
+	margin-left: auto;
+	width: 500px;
+}
+
+table,th{
+	text-align: left;
+	height: 50px;
+}

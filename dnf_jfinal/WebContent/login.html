@@ -1,0 +1,76 @@
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/jscript" src="js/jquery.min.js"></script>
+		<script type="text/jscript" src="js/jquery.easyui.min.js"></script>
+	</head>
+	
+	<body>
+		<div style="width: 800px ; height: 800px; margin: auto;">
+			<br />
+			<div style="width: 250px;height: 20px; margin: auto; margin-top: 50px;">
+				<h3>欢迎登录<DNF>DNF</DNF>游戏交易平台</h3>
+			</div>
+			<br />
+			<br />
+			<div style="width: 600px; height: 20px; margin: auto; background-color: aqua;">
+				<img src="img/dnf.png" />
+			</div>
+			<br />
+			<br />
+			<div style="width: 600px; height: 20px; margin: auto; margin-top: 300px;">
+				<div>
+					<form action="#" method="post" id="login">
+						用户名：
+						<input name="user.name" type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						密&nbsp;&nbsp;码&nbsp;：
+						<input name="user.password" type="password"/>
+						&nbsp;&nbsp;
+						<input id="button" type="button" value="登录"/>
+						<br />
+						<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="registe.html" style="font-size: smaller;">没有注册请点击.</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		$("#button").click(function(){
+			$.ajax({
+				//几个参数需要注意一下
+					type: "POST",//方法类型
+					dataType: "text",//预期服务器返回的数据类型
+					url: "http://localhost:8080/dnf_jfinal/user/login" ,//url
+					data: $('#login').serialize(),
+					success: function (result) {
+						alert("登陆成功")
+						alert(result)
+						if(result == "1" || result == "0"){
+							if(result == "1"){
+								window.location.href="index1.html"
+							}else{
+								window.location.href="index.html"
+							}
+							
+							
+						}else{
+							alert("登陆失败")
+						}
+// 						if (result.resultCode == 200) {
+// 							alert(result);
+// 						};
+					},
+					error : function() {
+						alert("异常！");
+					}
+				});
+		})
+	</script>
+	
+</html>

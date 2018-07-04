@@ -1,0 +1,1902 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	dnf游戏交易平台
+</title><meta http-equiv="X-UA-Compatible" content="ie=edge" /><meta name="keywords" content="地下城与勇士交易平台，游戏币装备账号交易，角色交易" /><meta name="description" content="UU898最专业方便快捷的地下城与勇士交易平台，游戏币,交易，装备订制，求购信息" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Cache-Control" content="no-transform" /><meta http-equiv="Cache-Control" content="no-siteapp" /><meta name="applicable-device" content="pc" />
+    
+    
+    
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="//s.img898.com/mq??www/css/top.css,www/css/hongbao.css,www1/css/Customization.css&v=z70c639dv" />
+    
+    <link rel="stylesheet" href="//s.img898.com/mq??www/css/uz-active.css,www1/css/newtradepageset.css,www/css/productDetails.css,www/css/spList.min.css&v=z70c639dv" />
+		<link rel="stylesheet" href="css/test.css" />
+    <script src="//user.uu898.com/js/UserWindowTip.js?v=z70c639dv"></script>
+    <script src="//s.img898.com/mq??www/js/newCommonJSFunc.js,www/js/myFavorite.js,www/js/newTrade.js&v=z70c639dv"></script>
+    <link rel="stylesheet" href="//dzimg.img898.com/www1/uu661/css/base.css?v=z70c639dv" />
+    
+    <link rel="stylesheet" href="//s.img898.com/mq??www/css/dnf_shop.css,www/css/uudialogui.css,user/css/uzActive.css&v=z70c639dv" />
+    <style>
+        #popupAddr a {
+            top: 5px !important;
+            color: #fff !important;
+        }
+    </style>
+    <script type="text/javascript">
+		
+		
+        // 当前条件下是否可使用白条
+        var _OpenYebIou = 1;
+        function getbtypeurl(btype) {
+            var btypeurl = "";
+            if (btype == "0") {
+                btypeurl = "/newTrade.aspx?gm=95&area=2343&srv=25083&c=-3";
+            }
+            else if (btype == "5") {
+                btypeurl = "/newTrade.aspx?gm=95&area=2343&srv=25083&b=5&c=-3";
+            }
+            else if (btype == "10") {
+                btypeurl = "/newTrade.aspx?gm=95&area=2343&srv=25083&b=10&c=-3";
+            }
+            else if (btype == "6") {
+                btypeurl = "/newTrade.aspx?gm=95&area=2343&srv=25083&b=6&c=-3";
+            };
+
+            var commonKey = $("#commonKey");
+            var commonKey2 = $("#commonKey2");
+            if (commonKey.val() != null && commonKey.val() != "" && commonKey.val() != "请输入关键字"
+                && commonKey2.val() != null && commonKey2.val() != "" && commonKey2.val() != "输入商品关键字") {
+                if (commonKey.val() == commonKey2.val()) {
+                    btypeurl += "&key=" + commonKey.val();
+                }
+                else {
+                    btypeurl += "&key=" + $("#searchkey").text();
+                }
+            }
+
+            window.location.href = btypeurl;
+        }
+    </script>
+    <form method="post" action="newTrade.aspx?gm=95&amp;area=2343&amp;srv=25083&amp;c=-3" id="formMain" style="width: 100%;">
+	<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNTc5NDAxNzNkZCdnc3bJlAyzl0vzt2linGlirjRw" />
+</div>
+
+	<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2AC2645D" />
+</div>
+        <div class="top">
+            <!--Top hygl-->
+    <!--
+		=============================================================================================
+		-->
+						<div id="login" style="width: 100%;height: 25px;background-color: darkgray;padding-left: 350px;font-size: larger;">
+							<p>您好，欢迎来到dnf游戏平台!!
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名：<a id="userName"></a></p>
+						</div>
+    
+            <!--热卖商品-->
+            <!--logo+搜索框-->
+            <div class="logo_ss">
+                <ul class="logo">
+                    <li>
+                        <a href="/" target="_blank">
+                            <img src="img/logo.jpg" alt="logo" />
+                        </a>
+                    </li>
+									
+                </ul>
+								<!--
+								=====================================================================================================
+								-->
+								<ul class="logo">
+									<li><br/></li>
+									<li><br/></li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+												选择大区：
+												<select id="daqv">
+														<option value ="吉林">吉林区&nbsp;&nbsp;&nbsp;&nbsp;</option>
+														<option value ="北京">北京区&nbsp;&nbsp;&nbsp;&nbsp;</option>
+												</select>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												选择服务器：
+												<select id="server">
+														<option value ="1">1区&nbsp;&nbsp;&nbsp;&nbsp;</option>
+														<option value ="2">2区&nbsp;&nbsp;&nbsp;&nbsp;</option>
+												</select>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												
+										</li>
+									
+								</ul>
+                <!--搜索框-->
+                
+
+                <!--精确搜索-游戏名称-->
+                <div class="yxmc" style="display: none;" id="gameselect">
+                    <!--历史选择-->
+                    <div class="yxmc_lsxz">
+                        <ul class="lsxz_left">
+                            <li class="duan_li_fh" style="display: none;" id="quickreturn"><a href="#" onclick="quickreturngame()">返回</a></li>
+                            <li class="duan_li">
+                                <i class="head-ico ico-so-zoom" onclick="getGamesSearchResult();"></i>
+                                <input class="so_dq" name="keyword" id="txtquickKeys" onfocus="if(this.value=='请输入汉字或拼音') this.value=''" value="请输入汉字或拼音" onblur="if(this.value=='') this.value='请输入汉字或拼音'" onkeydown="if(event.keyCode==13) {getGamesSearchResult();return stopDefault(event);}" />
+                            </li>
+                            <li>
+                                <h3>
+                                    <i class="head-ico ico-so-history"></i>历史选择：</h3>
+                            </li>
+                            <li style="width: 500px;" class="gray" id="hothistoryselect"></li>
+                        </ul>
+
+                        <ul class="lsxz_right">
+                            <li>
+                                <p><a href="javascript:closelistdisplay('gameselect')">×</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <!--快速搜索-->
+                    <!--热门游戏-->
+                    <div class="my_tabgame clearfix">
+                        <ul class="gametab" style="margin-top: 0px;">
+                            <li title="d1" class="on" style="margin-left: 10px;">网络游戏</li>
+                            <li title="d2" class="phone_pos"><i class="head-ico ico-so-new"></i>手机游戏</li>
+                        </ul>
+                        <div style="border-bottom: 1px solid #37a7e8; position: relative; z-index: 10; margin-top: -1px; *margin-top: 0px;"></div>
+                    </div>
+                    <div>
+                        <div id="d1" class="yxmc_rmyx">
+                            <ul class="rmyx_tit">
+                                <li onclick="charactorSelected_buys('')">
+                                    <h3 class="Red">
+                                        <i class="head-ico ico-so-hot"></i>热门游戏</h3>
+                                </li>
+                                <li class="py_index">
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('A')" id="topa">A</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('B')" id="topb">B</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('C')" id="topc">C</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('D')" id="topd">D</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('E')" id="tope">E</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('F')" id="topf">F</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('G')" id="topg">G</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('H')" id="toph">H</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('I')" id="topi">I</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('J')" id="topj">J</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('K')" id="topk">K</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('L')" id="topl">L</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('M')" id="topm">M</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('N')" id="topn">N</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('O')" id="topo">O</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('P')" id="topp">P</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('Q')" id="topq">Q</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('R')" id="topr">R</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('S')" id="tops">S</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('T')" id="topt">T</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('U')" id="topu">U</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('V')" id="topv">V</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('W')" id="topw">W</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('X')" id="topx">X</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('Y')" id="topy">Y</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buy('Z')" id="topz">Z</a></p>
+                                </li>
+                            </ul>
+                            <div class="qf_find">
+                                <a href="/user/search.aspx" target="_blank">找不到游戏、区服？</a>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <ul class="rmyx_list hlse" id="topgames">
+                            </ul>
+                        </div>
+                        <div id="d2" style="display: none" class="yxmc_rmyx">
+                            <ul class="rmyx_tit">
+                                <li onclick="charactorSelected_buysj('')">
+                                    <h3 class="Red">
+                                        <i class="head-ico ico-so-hot"></i>热门游戏</h3>
+                                </li>
+                                <li class="py_index">
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('A')" id="topja">A</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('B')" id="topjb">B</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('C')" id="topjc">C</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('D')" id="topjd">D</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('E')" id="topje">E</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('F')" id="topjf">F</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('G')" id="topjg">G</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('H')" id="topjh">H</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('I')" id="topji">I</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('J')" id="topjj">J</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('K')" id="topjk">K</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('L')" id="topjl">L</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('M')" id="topjm">M</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('N')" id="topjn">N</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('O')" id="topjo">O</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('P')" id="topjp">P</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('Q')" id="topjq">Q</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('R')" id="topjr">R</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('S')" id="topjs">S</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('T')" id="topjt">T</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('U')" id="topju">U</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('V')" id="topjv">V</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('W')" id="topjw">W</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('X')" id="topjx">X</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('Y')" id="topjy">Y</a></p>
+                                    <p class="hotyx_select"><a href="javascript:charactorSelected_buyj('Z')" id="topjz">Z</a></p>
+                                </li>
+                            </ul>
+                            <div class="qf_find">
+                                <a href="/user/search.aspx" target="_blank">找不到游戏、区服？</a>
+                            </div>
+                            <div style="clear: both;"></div>
+                            <ul class="rmyx_list hlse" id="topgamej">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <!--精确搜索-游戏大区-->
+                <div class="yxmc" style="display: none;" id="areaselect">
+                    <!--选择游戏区-->
+                    <div class="yxmc_lsxz">
+                        <ul class="lsxz_left">
+                            <li class="duan_li">
+                                <i class="head-ico ico-so-zoom"></i>
+                                <input class="so_dq" id="areainput" value="请输入中文搜索大区" onfocus="if(this.value=='请输入中文搜索大区') this.value=''" onkeyup="getAreasByKeyWords(this.value)" onblur="if(this.value=='') this.value='请输入中文搜索大区'" onkeydown="if(event.keyCode==13) {stopDefault(event);}" />
+                            </li>
+                            <li>
+                                <h3>请选择游戏区：</h3>
+                            </li>
+                            <li>
+                                <h4 class="Wfont"><a href="javascript:areaSelected(-1,'全部区')">全部区</a></h4>
+                            </li>
+                        </ul>
+
+                        <ul class="lsxz_right">
+                            <li>
+                                <p>
+                                    <a href="javascript:closelistdisplay('areaselect')">×</a>
+                                </p>
+                            </li>
+                            <li class="qufu"><a href="/user/search.aspx" target="_blank">找不到游戏、区服？</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+                    <!--大区-->
+                    <div class="yxmc_rmyx">
+                        <ul class="rmyx_list hlse" id="arealist">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+
+                <!--精确搜索-游戏服务器-->
+                <div class="yxmc" style="display: none;" id="serverselect">
+                    <!--选择游戏服务器-->
+                    <div class="yxmc_lsxz">
+                        <ul class="lsxz_left">
+                            <li class="duan_li">
+                                <i class="head-ico ico-so-zoom"></i>
+                                <input class="so_dq" id="serverinput" value="请输入中文搜索服务器" onfocus="if(this.value=='请输入中文搜索服务器') this.value=''" onkeyup="getServersByKeyWords(this.value)" onblur="if(this.value=='') this.value='请输入中文搜索服务器'" onkeydown="if(event.keyCode==13) {stopDefault(event);}" />
+                            </li>
+                            <li>
+                                <h3>请选择游戏服务器：</h3>
+                            </li>
+                            <li>
+                                <h4 class="Wfont"><a href="javascript:serverSelected(-1,'全部服务器')">全部服务器</a></h4>
+                            </li>
+                        </ul>
+                        <ul class="lsxz_right">
+                            <li>
+                                <p>
+                                    <a href="javascript:closelistdisplay('serverselect')">×</a>
+                                </p>
+                            </li>
+                            <li class="qufu"><a href="/user/search.aspx" target="_blank">找不到游戏、区服？</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <!--服务器-->
+                    <div class="yxmc_rmyx">
+                        <ul class="rmyx_tishi" style="display: none">
+                            <li><a target="_blank" href="//help.uu898.com/?hid=6464">由于《剑灵》官方数据互通，若您查找不到服务器，请点击此处查看互通后的服务器名称</a></li>
+                        </ul>
+                        <ul class="rmyx_list hlse" id="serverlist">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+
+                <!--精确搜索-物品类型-->
+                <div class="yxmc" style="display: none;" id="ctypeselect">
+                    <!--选择物品类型-->
+                    <div class="yxmc_lsxz">
+                        <ul class="lsxz_left">
+                            <li>
+                                <h3>请选择物品类型：</h3>
+                            </li>
+                            <li style="width: 700px;">
+                                <h4 class="Wfont"><a href="javascript:cTypeSelected(-1,'全部类型')">全部类型</a></h4>
+                            </li>
+                        </ul>
+
+                        <ul class="lsxz_right">
+                            <li>
+                                <p>
+                                    <a href="javascript:closelistdisplay('ctypeselect')">×</a>
+                                </p>
+                            </li>
+                            <li class="qufu"><a href="/user/search.aspx" target="_blank">找不到游戏、区服？</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
+
+                    <!--物品类型游戏-->
+                    <!--第一部分-->
+                    <div class='h_top_fl trad_s clearfix' id="cTypeListPre">
+                        
+                    </div>
+                    <!--第二部分-->
+                    <div class="yxmc_rmyx hlse">
+                        <ul class="rmyx_list" id="ctypelist">
+                            <!--top_select_bg 这个在js中判断是否需要-->
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+
+                <!--普通搜索-->
+                <div class="ptss" style="display: none;" id="commonselect">
+                    <ul class="ptss_list gray">
+                        <li><a href="javascript:void(0)">搜索关于“英雄联盟”的游戏</a></li>
+                        <li><a href="javascript:void(0)">搜索关于“英雄联盟”的游戏</a></li>
+                        <li><a href="javascript:void(0)">搜索关于“英雄联盟”的游戏</a></li>
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div style="clear: both;"></div>
+            <!--logo-->
+            <!--导航========================================================================================-->
+            <div class="daohang">
+                <ul class="Navbox item5 xjys6">
+                    <li><a class="Nav_selected" onclick="update(this)">游戏币</a></li>
+                    <li><a target="_blank" onclick="update(this)">材料</a></li>
+                    <li style="overflow:visible;">
+	                    <a target="_blank" onclick="update(this)">装备</a>
+	                    <ul class="select-ul-list" id="Buy" style="clear: both;overflow: hidden;
+	                    min-width: 400px;z-index: 999;background-color: #fff;border: 1px solid #00b0ff;
+	                    position: absolute;top: 40px;display: none;"></ul>
+                    </li>
+                    <li style="overflow:visible;">
+                        <a target="_blank" onclick="update(this)">深渊票</a>
+	                    <ul class="select-ul-list" id="Sell" style="clear: both;overflow: hidden;
+                        min-width: 400px;z-index: 999;background-color: #fff;border: 1px solid #00b0ff;
+                        position: absolute;top: 40px;display: none;"></ul>
+                    </li>
+                    <li><a target="_blank" onclick="update(this)">点券</a></li>
+                    <!--<li><a href="/myFavorite.aspx">我的收藏<span id="myfavoriteCount"></span></a></li>-->
+					<li><a target="_blank" onclick="update(this)">游戏账号<span class="newss2"></span></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <!--中间部分-->
+        <div style="height: 2px; clear: both; width: 100%;"></div>
+
+        <div class="middle_new">
+            <span class="gwc-tit J-shoping" style="display: none"><em class="J-shoping-title"></em><i id="gwctotalecount" class="">0</i></span>
+            <!--现在位置 -->
+            
+            <div style="clear: both;"></div>
+
+            <!--你已选择+商品类型+游戏区服-->
+            <div class="xzlxqf">
+                <div style="clear: both;"></div>
+                <!--筛选条件-->
+                
+                <div class="clear" style="height: 5px; width: 100%;"></div>
+                <!-- 壕哥收货 -->
+                
+                <div class="clear"></div>
+
+                <div class="spxx clearfix" style="">
+                    <!-- 壕哥收货 -->
+                    
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="spxx clearfix" style="">
+                    <!-- 客服收货 -->
+                    
+                </div>
+                <div style="clear: both;"></div>
+                
+                <style>.taskUz{height: 80px;width:100%;margin-bottom: 10px;}</style>
+                
+                <div class="taskUz0122">
+                    <a href="//www.uu898.com/newTrade.aspx?gm=95&c=6" class="imgHref" target="_blank">
+                        <img src="//s.img898.com/www/png/generalize/ad_title3.jpg" />
+                    </a>
+                </div>
+                
+                <!--  太阳账号广告  -->
+                
+                
+                
+                <!--  dnf客服 -->
+                <div class="dnf-kf" style="display:none;position: fixed; bottom: 30%; right: 0; width: 86px; height: 234px; cursor: pointer; z-index: 999999;">
+                    <i id="dnfad-close" title="关闭" style="position: absolute; right: 4px; top: -5px; font-size: 18px; cursor: pointer;color: #fff;">×</i>
+                    <a target="_blank" href="//www.uu898.com/AuctionTrade.aspx?gm=95&c=862">
+                        <img src="//s.img898.com/www/png/paimaihang/paimaihang_door.png" />
+                    </a>
+                </div>
+                <script>
+                            $("#dnfad-close").click(function () {
+                                $(".dnf-kf").hide();
+                            })
+                </script>
+                
+                
+               
+
+                <!--商品信息（交易类型）选项卡-->
+                <div class="spxx">
+                    <div class="btn_list" style="display: none;">
+                        <a href="/sell.aspx" target="_blank">我要出售</a><a href="/gameselect.aspx?b=6" target="_blank">我要求购</a>
+                    </div>
+
+                    <ul class="spxx_tit" style="display: none;">
+                        <li>
+                            <a class='spxxtit_selected' style='color: #fff;'
+                                href="javascript:void(0)" onclick="getbtypeurl('0')">所有信息</a>
+                        </li>
+                        <li>
+                            <a 
+                                href="javascript:void(0)" onclick="getbtypeurl('5')">账号信息</a>
+                        </li>
+                        <li>
+                            <a 
+                                href="javascript:void(0)" onclick="getbtypeurl('10')">定制信息</a>
+                        </li>
+                        <li>
+                            <a 
+                                href="javascript:void(0)" onclick="getbtypeurl('6')">求购信息</a>
+                        </li>
+                        <li >
+                            <i></i>
+                            <a href="//card.uu898.com/CardListInfo/ListCard.aspx?GmId=95&c=-3">点卡信息</a>
+                        </li>
+                    </ul>
+                    <div style="clear: both;"></div>
+
+                    
+                    <div style="clear: both;"></div>     
+                   
+
+                    <!--广告弹窗end-->
+                    <!--商品列表-->
+                    <div class="splb clearfix">
+                        <!--打飞机广告弹窗-->
+                        <!--做任务免费领U钻弹窗-->
+                        <div class="pop-tips-uz-fly" style="display: none;" id="showUzbuvdiv">
+                            <p onclick="closeTh()">x</p>
+                            <!--<p class="pop-tips-uz-fly-p">获取U钻攻略<i class="pop-tips-uz-fly-close" onclick="closeTh()">【关闭】</i></p>-->
+                            <div class="pop-tips-uz-fly-div">
+                                <a href="javascript:;" onclick="closeSa()"></a>
+                            </div>
+                        </div>
+                        <!--U钻不足弹窗-->
+                        <!--<div class="pop-tips-uz-fly11_24" style="display: none;" id="showUzbuvdiv11_24">
+                    		<p onclick="closeTh11_24()">x</p>
+					    	<div class="pop-tips-uz-fly-div11_24">
+					    		<a href="javascript:;" onclick="closeSa11_24()"></a>
+					    	</div>
+					    </div>-->
+                        <div class="opciaty11_17"></div>
+                        <!--遮罩层-->
+                        <!--有资格，未完成弹窗-->
+                        <!--<div class="pop-tips-uz-fly11-13" style="display: none;" id="showUzbuvdiv11_13"> 	
+						    <p onclick="closeThP()">x</p>
+						    <div class="pop-tips-uz-fly11-11" style="display: none;" id="showUzbuvdiv11_11">
+								<a href='http://air.uu661.com/Air/?sourceId=95' target="_blank" id="dfj11_11"  style="position: relative;width: 220px;height: 450px;display: block;z-index: 999;" ></a>
+						    </div>
+					    </div>-->
+                        <script type="text/javascript">
+                            $("#dfj11_11").on('click', function () {
+                                $("#showUzbuvdiv11_13").hide();
+                                $(".opciaty11_17").css("display", "none");
+                            })
+                        </script>
+                        <!--DNF收货  -->
+                        
+
+
+<script type="text/javascript">
+    var LeftDataCount = parseInt("10");
+    var WeaponList = {}; //获取装备列表
+    var CountSortList = {}; // 销量排序列表
+    var PriceSortList = {}; // 价格排序列表
+    var fristWeapon = "";  //  首选    	 
+    var tabIndex = 0; //销量、价格选项选中值
+    var para = url2json(window.location.href);
+    //
+    if ('tabIndex' in para) {
+        tabIndex = para.tabIndex;
+        setTab();
+    }
+    
+    function getWeapon() {
+        $(".WeaponList").html("");
+        $.get('/static/inc/getspctype-385.html?' + dateS(), function (res) {//  	 		
+            WeaponList = res;
+            $.each(res.specialCType, function (i, value) {
+                var html = "<li data-id='" + value.id + "' onclick='liClick(this)'>" + value.name + "</li>"
+                $(".WeaponList").append(html);
+            })
+            // 显示装备列表第一个数据;如果有参数，则按参数显示
+            if ('zdjId' in para) {
+                var index = 0;
+                $(".WeaponList li").each(function () {
+                    if ($(this).attr("data-id") == para.zdjId) {
+                        index = $(this).index();
+                        return;
+                    }
+                })
+                $(".WeaponList li").eq(index).addClass('hover');
+                WeaponSort(para.zdjId);
+            } else {
+                $(".WeaponList li").eq(0).addClass('hover');
+                WeaponSort($(".WeaponList li").eq(0).attr("data-id"));
+            }
+        }, 'json')
+    }
+    // 获取排序列表
+    function WeaponSort(id) {
+        // todo 传值     销量、价格排序
+        var url = "/static/inc/getBoutList-" + $('#searchGameId').val() + "-" + $('#searchAreaId').val() + "-" + $('#searchServerId').val() + "-" + id + ".html?" + dateS()
+        $.get(url, function (res) {
+            PriceSortList = res.boutListByPrice;
+            CountSortList = res.boutListByCount;
+            BindSortList(id)
+        }, 'json')
+    }
+    // 年月日小时+分钟
+    function dateS() {
+        var mydate = new Date;
+        var year = mydate.getFullYear().toString();
+        var month = (mydate.getMonth() + 1).toString();
+        var day = mydate.getDay().toString();
+        var hour = mydate.getHours().toString();
+        var min = parseInt(mydate.getMinutes() / 10).toString();
+        if (month.length == 1) {
+            month = "0" + month;
+        }
+        if (day.length == 1) {
+            day = "0" + day;
+        }
+        return year + month + day + hour + min;
+    }
+    //设置选项卡初始状态
+    function setTab() {
+        $('.zbb_btn a').removeClass('hover');
+        $('.zbb_btn a').eq(tabIndex).addClass('hover');
+        switch (tabIndex) {
+            case 0:; $('#CountSortList').show(); $('#PriceSortList').hide(); break;
+            case 1:; $('#CountSortList').hide(); $('#PriceSortList').show(); break;
+        }
+    }
+    // 绑定销量、价格列
+    function BindSortList(id) {
+        var headMore = "<li class='hrefmore'><a href='/newTrade.aspx?gm=" + $('#searchGameId').val() + "&area=" + $('#searchAreaId').val() + "&srv=" + $('#searchServerId').val() + "&c=-2&specialType=" + id + "'>更多</a></li>"
+        var head = "<li class='headTT clearfix'><span class='weap103'>销量排行</span><span class='weap45'>销量</span></li>"
+        var head2 = "<li class='headTT clearfix'><span class='weap103'>价格排行</span><span class='weap45'>价格</span></li>"
+        $("#CountSortList").html("");
+        $("#PriceSortList").html("");
+        $("#CountSortList").html(head);
+        $("#PriceSortList").html(head2);
+        $.each(CountSortList, function (i, value) {
+            var html = "<li data-commodityno='" + value.commodityNo + "' data-id='" + id + "'><span class='weap103'>" + value.name + "</span><span class='red weap45'>" + value.count + "件</span></li>"
+            $("#CountSortList").append(html);
+        });
+        $.each(PriceSortList, function (i, value) {
+            var html = "<li data-commodityno='" + value.commodityno + "'><span class='weap103'>" + value.name + "</span><span class='red weap45'>" + value.price + "元</span></li>"
+            $("#PriceSortList").append(html);
+        });
+        addCommand('#CountSortList li', id);
+        addCommand('#PriceSortList li', id);
+        $("#CountSortList").append(headMore);
+        $("#PriceSortList").append(headMore);
+
+    }
+    //  排序绑定鼠标移入事件
+    function addCommand(opter, id) {
+        $(opter).on({
+            'mouseenter': function () {
+                if ($(this).attr('class') != 'headTT clearfix' && $(this).attr('class') != 'hrefmore') {
+                    if ($(this).find('em').length > 0) {
+                        $(this).find('em').show();
+                    } else {
+                        var commodityno = $(this).attr('data-commodityno');
+                        var zdjHref = "/newTrade.aspx?gm=" + $('#searchGameId').val() + "&c=-2"
+                        + "&area=" + $('#searchAreaId').val() + "&srv=" + $('#searchServerId').val()
+                        + "&commodityno=" + commodityno
+                        // zdjId 装备类型 ;tabIndex 装备、价格选项值
+                        + "&zdjId=" + id + "&tabIndex=" + tabIndex;
+                        var wymHref = "/sell.aspx?gm=" + $('#searchGameId').val() + "&c=-2" + "&a=" + $('#searchAreaId').val() + "&s=" + $('#searchServerId').val()
+                        var html = "<em class='floatCom'><a href='" + zdjHref + "' target='_blank'>我要买</a><a href='" + wymHref + "' target='_blank'>我要卖</a></em>";
+                        $(this).append(html);
+                        $(this).find('em').show();
+                    }
+                }
+            },
+            'mouseleave': function () {
+                $(this).find('em').hide();
+            }
+        });
+    }
+    function liClick(obj) {
+        var name = $(obj).html();
+        var id = $(obj).attr('data-id');
+        $(obj).siblings().removeClass('hover')
+        $(obj).addClass('hover');
+        WeaponSort(id);
+    }
+    // 地址转json对象
+    function url2json(url) {
+        var index = -1,
+            str = '',
+            arr = [],
+            length = 0,
+            res = {};
+        if (url.indexOf('?') != -1) {
+            index = url.indexOf('?');
+            str = url.substring(index + 1);
+            arr = str.split('&');
+            length = arr.length;
+            for (var i = 0; i < length; i++) {
+                res[arr[i].split('=')[0]] = arr[i].split('=')[1];
+            }
+        } else {
+            res = {};
+        }
+        return res;
+    };
+    // 收货、出货记录总数
+    var SHListNum = 0
+    CHListNum = 0;
+    function showShList() {
+        if ("0" == "1") {
+            $.getJSON("/inc/shConfig.ashx?opt=shlist&gameid=" + $('#searchGameId').val() + "&areaid=" + $('#searchAreaId').val() + "&serverid=" + $('#searchServerId').val() + "&ctypeid=" + $('#commodityTypeId').val(), function (res) {
+                $("#shArea").show();
+                $("#shArea small").text($("#servername").text());
+                $("#shArea .con0915btn a:eq(2)").attr("href", "/newShTrade.aspx?gm=" + $('#searchGameId').val() + "&area=" + $('#searchAreaId').val() + "&srv=" + $('#searchServerId').val() + "&c=" + $('#commodityTypeId').val());
+                if (res.length > 0) {
+                    for (var i = 0; i < res.length; i++) {
+                        $("#shlist").append("<li class=\"clearfix\"><p><span class=\"weight clearfix\"><a href=\"/CreateShouHuoOrder.aspx?id=" + res[i].commodityNo + "&num=" + Math.ceil(res[i].scale * 20) + "\" target='_blank'>我要接单</a><i>收金</i>" + res[i].maxNumber + res[i].unitName + "20元起收</span><span class=\"light clearfix\"><span>比例：1元=" + res[i].scale + res[i].unitName + " </span><em>全款已付</em><a class='openMXD2' target='_blank' href='/Activities/mxd2/index.aspx'></a></span></p></li>");
+                    }
+                }
+                // 初始化 收货专区、收货专区样式
+                SHListNum = res.length;
+                CHListNum = $(".dnf-list-17").length;
+                if (SHListNum == 0) {
+                    $(".noRecordSH").show();
+                } else if (SHListNum > 3) {
+                    $(".dnf-list-box").css({ "max-height": "238px", "overflow": "hidden" })
+                    if (CHListNum == 2) {
+                        $(".dnf-list-box").on("mouseenter", function () { $("#shlist").css({ "max-height": "168px", "overflow": "hidden" }); $(".dnf-list-box").css({ "max-height": "490px" }) })
+                        $("#shlist").on("mouseenter", function () { $("#shlist").css({ "max-height": "" }); $(".dnf-list-box").css({ "max-height": "238px", "overflow": "hidden" }) })
+                    }
+                }
+            });
+        }
+    }
+
+    $(function () {
+        // 右侧装备列表
+        if ($('#searchGameId').val() == "385"
+            && $('#searchAreaId').val() != "-1"
+            && $('#searchServerId').val() != "-1"
+            && $("#hidIsSHCommodityType").val() != "1") {
+
+            $('.zbb_0829').show();
+            // todo  显示装备列示，需改为hide()
+            $('.side-dnf-con-17').hide();
+
+        } else {
+            $('.side-dnf-con-17').show();
+            $('.zbb_0829').hide();
+            showShList();
+        }
+        // 销量、价格 切换
+        $('.zbb_btn a').click(function () {
+            tabIndex = $(this).index();
+            $('.zbb_btn a').removeClass('hover');
+            $(this).addClass('hover');
+            switch (tabIndex) {
+                case 0: $('#CountSortList').show(); $('#PriceSortList').hide(); break;
+                case 1: $('#CountSortList').hide(); $('#PriceSortList').show(); break;
+            }
+        })
+        // 收货列表.计算应付价格
+        $("#dnfshouhuo").find("input[name='num']").keyup(function () {
+
+            var sc = $(this).val();
+
+            if (!isNaN(sc)) {
+                var bili = $(this).next().val();
+                var itemScale = parseFloat($(this).next().next().val());
+
+                // bili = Math.floor(bili * 10000) / 10000;
+
+                // console.log(bili);
+                //var money = Math.floor(sc / bili * 1000 / 10) / 100;
+                var money = (parseInt((parseFloat(sc) / bili) * 100) / 100).toFixed(2);
+                if (itemScale > 0) {
+                    bili = Math.floor(bili * 1000 / 10) / 100;
+                    money = (Math.floor(bili * 1000 * sc / 10) / 100).toFixed(2);
+                    // money = Math.floor(bili * 1000 * sc / 10) / 100;
+                }
+                var result = money + " 元";
+                $(this).parent().parent().next().find("span").text(result);
+            } else {
+                $(this).val("");
+            }
+
+        });
+        $("#dnfshouhuo").find("input[name='num']").keyup();
+        //
+
+
+    })
+
+
+
+    function dnfShouHuoSubmit(commodityNo, obj) {
+
+        var numcount = $("#num_" + commodityNo).val(); //出售数量
+        var maxnum = $("#max_" + commodityNo).val();
+        var minnum = $("#min_" + commodityNo).val();
+        var gameUnitName = $("#gunitName").val();
+        var commodityType = $("#commodityType_" + commodityNo).val();
+
+        if (numcount == undefined || numcount == "") {
+            alert("请填写出货数量!");
+            return false;
+        }
+
+        if (commodityType == 620 && numcount.indexOf(".") >= 0) {
+            alert("收货量应为整数!");
+
+        }
+        else if (isNaN(numcount)) {
+            alert("收货量应为数字!");
+
+        }
+        else if (parseInt(numcount) > parseInt(maxnum)) {
+            alert("出货数量不能大于总收货数量" + maxnum + gameUnitName);
+
+        }
+        else if (parseInt(numcount) < minnum) {
+            alert("出货数量不能小于最低收货数量" + minnum + gameUnitName);
+
+        }
+
+        else {
+            location = "/CreateShouHuoOrder.aspx?id=" + commodityNo + "&num=" + numcount;
+
+
+        }
+
+
+    }
+
+</script>
+<script type="text/javascript">
+if (LeftDataCount == '1'){
+    $('#dropDown').html(null);
+    $('#lookMore').html(null)
+}
+if (LeftDataCount == '2'){
+    $('#dropDown').html(null);
+    $('#lookMore').html(null)
+}
+//  商城收获 tab切换
+$('#LeftTab').hover(function() {
+    $(this).addClass('title-this');
+    $(this).css('border-left','2px solid #f04646');
+    $('#RightTab').removeClass('title-this').css('border-right','2px solid #fcf8ec');
+    $('.side-dnf-tab-title span').css('border-top','2px solid #fee5c0');
+    $('.side-dnf-tab-title a').css('border-top','2px solid #f04646');
+    $('#lookMore').hide();
+    $('#dropDown').show();
+    $('#detailed').show();
+    $('#simplify').hide()
+});
+$('#RightTab').hover(function() {
+    $(this).addClass('title-this');
+    $(this).css('border-right','2px solid #f04646');
+    $('.side-dnf-tab-title span').css('border-top','2px solid #f04646');
+    $('.side-dnf-tab-title a').css('border-top','2px solid #fee5c0');
+    $('#LeftTab').removeClass('title-this').css('border-left','2px solid #fcf8ec');
+    $('#lookMore').show();
+    $('#dropDown').hide();
+    $('#detailed').hide();
+    $('#simplify').show()
+});
+//  滚动条处理
+$('#detailed').scroll(function() {
+    var h = $(this).scrollTop();
+    console.log(LeftDataCount);
+    if (h > 0 && LeftDataCount > 1){
+        $('#dropDown').html('查看更多收货信息&nbsp;>').attr({"href":"/newShTrade.aspx?gm=95&area=2343&srv=25083&c=-3","target":"_blank"});
+    } else {
+        $('#dropDown').html('&or;下拉查看更多').attr({"href":"javascript:;","target":""});
+    }
+});
+$('#BOX').mouseleave(function() {
+       document.getElementById('detailed').scrollTop=0;
+     document.getElementById('simplify').scrollTop=0;
+})
+
+</script>
+
+                        <!--左侧列表-->
+                        <!--<div class="UZ2017-11-8"></div>-->
+                        <div class="splb_left float_box_top" style="width: 1200px;">
+                            
+                            <a href="/newTrade.aspx?gm=95&area=2343&srv=25083&c=-3&o=5&sa=0&p=1" class="gpy_btn"></a>
+                            
+                            
+
+                            <div style="clear: both;"></div>
+
+                            <!-- 零售商城界面  begin 
+                                editor: kamihati 2017-5-9
+                                -->
+
+                            <div class="game-shop-dnf-box clearfix pos" id="divRetailMallBox" style="display: none;">
+
+                                <style>
+                             	.shop-more{position: absolute;bottom: 0;left:35%;background: #EF1544;color:#fff !important;line-height: 25px;height:25px;width:120px;text-align: center;font-size: 14px;}
+                             	.shop-more2{position: absolute;bottom: 0;left:40%;background: #EF1544;color:#fff !important;line-height: 25px;height:25px;width:120px;text-align: center;font-size: 14px;}
+                                </style>
+                                <!--     商城主模块       -->
+                                <i class="hot-ico-dnf fist-ico"></i>
+                                <div class="game-shop-dnf shop-money-style show-01">
+                                    <a href="//www.uu898.com/newTrade.aspx?gm=95&area=2343&srv=25083&c=-3&pageretail=1" class="shop-more">查看更多</a>
+                                    <ul class="game-shop-head clearfix">
+                                        <li class="game-w-1">
+                                            <h1>游戏币商城</h1>
+                                        </li>
+                                        <li class="game-w-2">商品单价</li>
+                                        <li class="game-w-3">购买数量</li>
+                                        <li class="game-w-6"><a href="//user.uu898.com/shouhuo/shApplyManage.aspx?x" target="_blank">高曝光&nbsp;&nbsp;&nbsp;灵活出货&nbsp;&nbsp;&nbsp;立即入驻</a></li>
+                                    </ul>
+                                    <div class="game-shop-con shop-bg-blue clearfix shop-con" id="divRetailLeftBigList">
+                                        <ul class="game-shop-list clearfix" num="--minNumber--" minnum="--minNumber--" maxnum="--maxNum--" unittext="--unitText--" configid="--configId--" scale="--scaleVal--" itemscale="--itemScale--">
+                                            <li class="game-w-1">
+                                                <span class="game-w-1-span">商城<br>
+                                                    --tradeType--
+                                                </span>
+                                                <div class="game-w-1-con">
+                                                    --avgMinute--
+													<span class="f-gray">吉林区/吉林1／2区</span>
+                                                </div>
+                                                <!-- <span class="game-shop-tit">--tradeType--</span>-->
+                                            </li>
+                                            <li class="game-w-2">
+                                                <span class="game-shop-tit-red">--scale--</span>
+                                                <em class="game-shop-gray">库存：--maxNumber--</em>
+                                            </li>
+                                            <li class="game-w-3">
+                                                <div class="game-w-input">
+                                                    <input type="text" maxlength="8" onkeyup="changeRetail(this)" value="--minNumber--" placeholder="购买数量" />
+                                                </div>
+                                                <span class="game-shop-dw">--unitText--</span>
+                                            </li>
+                                            <li class="game-w-4">
+                                                <i>¥</i>--minPrice--
+                                            </li>
+                                            <li class="game-w-5">
+                                                <a onclick="buyRetail(this)" class="game-dnf-btn">立即购买</a>
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 商城主模块小列表 -->
+                                <div class="game-shop-dnf shop-money-style w-custom sy-animate-shop0508 show-04">
+                                    <i class="game-shop-show-bar">&gt;</i>
+                                    <h1 class="shop-sy-tit">游戏币商城</h1>
+                                    <div class="game-shop-con shop-bg-yellow clearfix" id="divRetailLeftSmallList">
+                                        <ul class="game-shop-list clearfix">
+                                            <li class="game-w-2">
+                                                <span class="game-shop-tit-red">--scale--</span>
+                                                <em class="game-shop-gray">库存：--maxNumber--</em>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--     商城次模块小列表       -->
+                                <div class="game-shop-dnf shop-sy-style w-custom show-02" id="shop-sy-short">
+                                    <i class="game-shop-show-bar">&lt;</i>
+                                    <h1 class="shop-sy-tit" otherctypetitle="1">商城</h1>
+                                    <div class="game-shop-con shop-bg-yellow clearfix" id="divRetailRightSmallList"></div>
+                                </div>
+                                <!--  深渊票次模块大列表 -->
+                                <div class="game-shop-dnf shop-sy-style money-animate-0508 show-03">
+                                    <a href="//www.uu898.com/newtrade.aspx?gm=95&area=2343&srv=25083&c=-3&pageretail=1" class="shop-more2">查看更多</a>
+                                    <i class="hot-ico-dnf"></i>
+                                    <ul class="game-shop-head clearfix">
+                                        <li class="game-w-1">
+                                            <h1 otherctypetitle="1">商城</h1>
+                                        </li>
+                                        <li class="game-w-2">商品单价</li>
+                                        <li class="game-w-3">购买数量</li>
+
+                                        <li class="game-w-6"><a href="//user.uu898.com/shouhuo/shApplyManage.aspx?x" target="_blank">高曝光&nbsp;&nbsp;&nbsp;灵活出货&nbsp;&nbsp;&nbsp;立即入驻</a></li>
+                                    </ul>
+                                    <div class="game-shop-con shop-bg-yel clearfix shop-con" id="divRetailRightBigList">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  出货商城js文件 -->
+                            <script type="text/javascript">
+                                $("#divRetailLeftBigList").on('mouseenter', '.game-shop-list', function (e) {
+                                    $(this).css("background-color", "#d3e8ff")
+                                        .siblings('.game-shop-list')
+                                        .css("background-color", "#e6eff9");
+                                }).mouseleave(function () {
+                                    $(this).children().css("background-color", "#e6eff9");
+
+                                    document.getElementById('divRetailLeftBigList').scrollTop = 0;
+                                });
+                                $("#divRetailRightBigList").on('mouseenter', '.game-shop-list', function (e) {
+                                    $(this).css("background-color", "#f7f0db")
+                                        .siblings('.game-shop-list')
+                                        .css("background-color", "#fcf8ec");
+                                }).mouseleave(function () {
+                                    $(this).children().css("background-color", "#fcf8ec");
+
+                                    document.getElementById('divRetailRightBigList').scrollTop = 0;
+                                })
+                            </script>
+
+                            <!-- 零售商城界面 end -->
+                            <!-- 热卖商品提示窗口 -->
+                            <div class="jsjytc pop_box w440" style="display: none; top: 253px;">
+                                <h4 class="tit">热卖商品</h4>
+                                <div class="hotSale_pop">
+                                    <h2>如何成为热卖商品？</h2>
+                                    <p>
+                                        <span>1、选择拍卖交易、当面交易方式发货<br>
+                                            2、出售比例符合条件的第一单商品</span>
+                                    </p>
+                                    <h2>热卖商品有什么好处？</h2>
+                                    <p>
+                                        <span>1、商品置顶展示，曝光度大大增加，更易卖出。<br>
+                                            2、专属热卖标示，商品更加醒目。<br>
+                                            3、交易更迅速，买家更喜欢购买！</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--商品列表1-->
+                            <div id="divCommodityLst" class="clearfix" style="position: relative;">
+
+														<!--
+														====================================================================================================================
+														-->
+                                
+                                <ul class="splb_list tqsp" id="ulHalfPrice" style="background: transparent none repeat scroll 0% 0%; display: none;">
+
+                                    <li class="sp_li0">
+                                        <h2 style="font-weight: bold; color: #06c;">
+                                            <img src="//s.img898.com/www/png/images/tqsp_ico.png" /><a>--title--</a></h2>
+                                        <p>物品类型：--commodity_type--</p>
+                                        <!--区服-->
+                                        <p class="qf_txt">游戏区服：<a target="_blank" href="--gameUri--">--gameName--</a> / <a target="_blank" href="--areaUri--">--areaName--</a> / <a target="_blank" href="--serverUri--">--serverName--</a></p>
+                                        <!--卖家信用等级 和 成交量 金牌担保 时显示项-->
+                                        <p class="tqsp_span"><em>【特权商品】用户：xinyushangrenuu 专属兑换 100%成功</em></p>
+
+                                    </li>
+                                    <li class="Red zuan_dh"><del>原价：￥50.00</del>
+                                        <!--class="red_jg"-->
+                                        <div class="dhz" style="position: relative;"><strong>25</strong><img class="z-img" src="//dzimg.img898.com/www1/uu661/images/zuan_16.png"><em>免费兑换</em></div>
+                                    </li>
+                                    <!--库存-->
+                                    <li class="sp_li3">
+                                        <h5 title="">1</h5>
+                                    </li>
+                                    <li class="sp_li1">
+                                        <!--比例转化-->
+                                        <h6>--scale--</h6>
+                                        <!--购买按钮-->
+                                        <button class="button_5 tq_btn" type="button">立即兑换</button>
+                                    </li>
+                                    <!--诚信保障-->
+                                    <li class="sp_li2">
+                                        <h3>
+
+                                            <a style="cursor: pointer; color: #ff5000;">
+                                                <i class="sp-ico ico-te" title=""></i><span>特权商品</span></a>
+                                            <br>
+
+                                            <a href="//help.uu898.com/Default.aspx?key=12&amp;action=uu898RecommendMerit.htm" target="_blank" style="cursor: pointer">
+                                                <i class="sp-ico ico-an" title="UU898安全保障，如有找回，全额赔付"></i><span>安全保障</span></a>
+                                            <br>
+                                            <a title="卖家原因撤单，买家获得10元赔款" style="cursor: pointer">
+                                                <i class="sp-ico ico-pei" title="卖家原因撤单，买家获得10元赔款"></i><span>无货赔付</span></a>
+                                            <br>
+                                            <a></a>
+                                            <br>
+                                        </h3>
+                                    </li>
+                                    
+                                    <!--购物车图标-->
+
+                                </ul>
+                                
+                                        <!--出货商城分页列表使用-->
+                                        
+                                        
+                                        
+                                        <div style="clear: both;"></div>
+																				
+																				
+                                    
+
+
+                            </div>
+                            
+                          
+                            
+                            <div style="clear: both;"></div>
+                        </div>
+                        <!--右侧列表-->
+                        
+
+                    </div>
+                    <div style="clear: both;"></div>
+                    <div class="float_gwc">&nbsp;</div>
+                </div>
+            </div>
+            <input type="hidden" id="actPopDFJ" />
+            <!--   返回普通预览   -->
+            
+            <div id="divClosePreRead" class="side_bar_yl">
+                <i></i>
+                
+                <a href="/newTrade-95-c-3-2343-s25083/">返<br />
+                    回<br />
+                    普<br />
+                    通<br />
+                    预<br />
+                    览<br />
+                </a>
+            </div>
+            
+
+            
+            <!--购物车栏-->
+            <div class="w_screen">
+                <div id="gwc_box0" class="w1200" style="display: none; overflow: hidden;">
+                    <div class="gwc_list" style="border: none;">
+                        <div class="float_btn"><i class="gwc_i0">-</i><i class="gwc_i1">x</i></div>
+                        <div class="gwc_list_table clearfix" style="display: block">
+                            <div id="cartbox">
+                                <span class="qx_span posa">全选</span>
+                                <ul class="clearfix gwc_list_head gwc_head_bg">
+                                    <li class="li0 li_center">
+                                        <label>
+                                            <input type="checkbox" onclick="quanxuancheck(this)" value="1" checked="checked" id="quanxuan" style="margin-top: -5px; *margin-top: 5px" /></label></li>
+                                    <li class="li1">商品标题</li>
+                                    <li class="li2">类型</li>
+                                    <li class="li3" style="width: 160px;">单价(元)</li>
+                                    <li class="li4">数量</li>
+                                    <li class="li5" style="width: 140px;">小计</li>
+                                    <li class="li6" style="width: 90px;">操作</li>
+                                    <li class="li7" style="width: 120px;">状态</li>
+                                </ul>
+                                <div class="gwc_list_con" id="Cart"></div>
+                            </div>
+                            <span class="gwc-clear" id="cartnone" style="display: none">
+                                <img src="//s.img898.com/www/png/images/gwc-clear.png" />您在该区服还未挑选任何商品~</span>
+                            <div class="gwc_list_end">
+                                <span class="gwc_blank_btn">&nbsp;</span>
+                                <a href="javascript:void(0)" onclick="delall()" class="del_list_all">
+                                    <i class="spListP-ico sp-dele"></i>删除已选中商品</a>
+                                <span class="ico_fd"></span>
+                                <p>已选择<span id="totalecount">0</span>件商品,<em>¥</em><span id="totalemoney" style="font-size: 18px">0</span>元</p>
+                                <a class="ljgm_btn ljgm_btn_click_bg pos_xx" id="cartpay" target="_blank"><span>去结算</span><em class="spListP-ico sp-gwarrow"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <!--购物车商品编号-->
+        <input type="hidden" name="hidcommdity" id="hidcommdity" />
+        <div id="Activity" style="display:none"></div>
+    </form>
+    
+		
+
+    <!--特殊类型。页面搜索时使用这个参数。重置参数需要清空此参数-->
+    <input id="specialType" type="hidden" value="" />
+    <!--找相似 隐藏字段-->
+    <input name="hidcommodityNo" type="hidden" id="hidcommodityNo" value="0" />
+
+    <!--右侧商品栏 隐藏字段-->
+    <input id="hidRightListArgs" type="hidden" value="FootMark,95,2343,25083" />
+    <!--每次请求时从 index+1 开始-->
+    <input id="hidRightListPIndex" type="hidden" value="0" />
+    <!--壕哥求购 隐藏字段-->
+    <input name="hidHGQGGameState" type="hidden" id="hidHGQGGameState" value="0" />
+    <input name="hidHGQGTotalCount" type="hidden" id="hidHGQGTotalCount" value="0" />
+    <input name="hidHGQGLowPrice" type="hidden" id="hidHGQGLowPrice" value="0" />
+    <input name="hidHGQGTopPrice" type="hidden" id="hidHGQGTopPrice" value="0" />
+    <input name="hidHGQGURL" type="hidden" id="hidHGQGURL" value="0" />
+
+    <input name="hidHGQGGameStateFSMW" type="hidden" id="hidHGQGGameStateFSMW" value="0" />
+    <input name="hidHGQGTotalCountFSMW" type="hidden" id="hidHGQGTotalCountFSMW" value="0" />
+    <input name="hidHGQGLowPriceFSMW" type="hidden" id="hidHGQGLowPriceFSMW" value="0" />
+    <input name="hidHGQGTopPriceFSMW" type="hidden" id="hidHGQGTopPriceFSMW" value="0" />
+    <input name="hidHGQGURLFSMW" type="hidden" id="hidHGQGURLFSMW" value="0" />
+
+    <input name="hidHGQGGameStateDSMW" type="hidden" id="hidHGQGGameStateDSMW" value="0" />
+    <input name="hidHGQGTotalCountDSMW" type="hidden" id="hidHGQGTotalCountDSMW" value="0" />
+    <input name="hidHGQGLowPriceDSMW" type="hidden" id="hidHGQGLowPriceDSMW" value="0" />
+    <input name="hidHGQGTopPriceDSMW" type="hidden" id="hidHGQGTopPriceDSMW" value="0" />
+    <input name="hidHGQGURLDSMW" type="hidden" id="hidHGQGURLDSMW" value="0" />
+
+    <input name="hidHGQGGameStateZSMW" type="hidden" id="hidHGQGGameStateZSMW" value="0" />
+    <input name="hidHGQGTotalCountZSMW" type="hidden" id="hidHGQGTotalCountZSMW" value="0" />
+    <input name="hidHGQGLowPriceZSMW" type="hidden" id="hidHGQGLowPriceZSMW" value="0" />
+    <input name="hidHGQGTopPriceZSMW" type="hidden" id="hidHGQGTopPriceZSMW" value="0" />
+    <input name="hidHGQGURLZSMW" type="hidden" id="hidHGQGURLZSMW" value="0" />
+
+    <input name="hidKFSHGameState" type="hidden" id="hidKFSHGameState" value="0" />
+    <input name="hidKFSHTotalCount" type="hidden" id="hidKFSHTotalCount" value="0" />
+    <input name="hidKFSHLowPrice" type="hidden" id="hidKFSHLowPrice" value="0" />
+    <input name="hidKFSHURL" type="hidden" id="hidKFSHURL" value="0" />
+    <input id="hidcartcom" type="hidden" />
+    <input id="cartid" type="hidden" value="" />
+    <input name="hidCTypeIsGongjiantuan" type="hidden" id="hidCTypeIsGongjiantuan" value="0" />
+    <input id="hidNeed385Top10" type="hidden" value="0" />
+    <!--找相似参数-->
+    <input id="hidCommodityNoSearch" type="hidden" value="" />
+    <input id="hidCanDDZSign" type="hidden" value="1" />
+    <!--出货商城分页-->
+    <input type="hidden" id="hidIsPageRetail" value="0" />
+    <!---->
+    <!--预读模式 隐藏字段：QueryString参数,当前显示页Index-->
+    <!--每次请求时从 index+1 开始-->
+    <input id="hidPreReadArgs" type="hidden" value="gm=95&area=2343&srv=25083&c=-3,1" />
+
+    <input name="hiddenTypeSortCountList" type="hidden" id="hiddenTypeSortCountList" value="1:117,2:2392,8:5,10:0,3:0,4:0," />
+    <script src="//s.img898.com/www/js/page/newSellfoot.js?v=z70c639dv"></script>
+    <div id="PopUpLayer" style="display: none"></div>
+    <div class="black_overlay" style="display: none;"></div>
+    <div class="pop-tips-uz " style="display: none;" id="showuzbuvdiv1">
+        <i class="pop-close" onclick="closeThis()">×</i>
+        <div class="pop-tips-uz-l">
+            <span>您的U钻数量不足！</span>
+            <a href="javascript:void(0)" onclick="closeThis()" class="btn-after" id="dzanqd">确定</a>
+        </div>
+    </div>
+    <!-- 斗地主 宣传 -->
+    <div class="pop-tipsDDZ" id="Showppodiv" style="display: none;">
+        <div class="pop-ticdz">
+            <img src="//s.img898.com/www/png/min/uz.png" />
+        </div>
+        <div class="pop-ticdz2">
+            <h1>您的U钻数量不足 </h1>
+            <span>（您可以参加右侧活动领取U钻）</span>
+        </div>
+        <div class="pop-ticd3">
+            <img src="//s.img898.com/www/png/min/fgx.png" />
+        </div>
+        <div class="pop-tips-qiand">
+            <img src="//s.img898.com/www/png/min/song.png" />
+        </div>
+        <div class="pop-tips-qiand2">
+            <label>玩一局斗地主无论输赢即可完成签到，每日一次</label>
+        </div>
+        <div class="pop-tips-qiand3">
+            <img src="//s.img898.com/www/png/min/lan.png" />
+        </div>
+        <div class="pop-tips-qiand4">
+            <a target="_blank" href="http://qipai.uu661.com/?auto=1">
+                <img src="//s.img898.com/www/png/min/kaishiyoux.png" /></a>
+        </div>
+        <div class="pop-tips-guanbi">
+            <a href="javascript:;" id="uzclose">×</a>
+        </div>
+    </div>
+    <!-- todo -->
+    <div class="pop-tipsDDZ widthpop560" id="showpp" style="display: none;">
+        <div class="pop0922">
+            <img src="//s.img898.com/www/png/min/song.png" />
+        </div>
+        <div class="pop09221">
+            玩一局斗地主无论输赢即可完成签到，每日一次
+        </div>
+        <div class="pop09222">
+            <img src="//s.img898.com/www/png/min/lan.png" />
+        </div>
+        <div class="pop-tips-qiand4">
+            <a target="_blank" href="http://qipai.uu661.com/?auto=1">
+                <img src="//s.img898.com/www/png/min/kaishiyoux.png" /></a>
+        </div>
+        <div class="pop-tips-guanbi">
+            <a href="javascript:;" id="uzclose2">×</a>
+        </div>
+    </div>
+
+
+    <!--我要收藏-->
+    <div id="myFavoriteDiv" class="Wfont scann" style="left: -1px;">
+        <p>
+            <a href="javascript:void(0)" onclick="addFavorite(95,2343,25083)">收<br>
+                藏<br>
+                此<br>
+                页<br>
+                面
+            </a>
+        </p>
+    </div>
+    <!--   弹窗  收货   -->
+    <div id="popSH" style="position: fixed; background: rgb(255, 255, 255); box-shadow: rgb(17, 85, 102) 2px 3px 5px; z-index: 9998; top: 50%; left: 50%; margin: -215px 0 0 -306px; display: none;">
+        <div class="tipbox">
+        </div>
+        <div class="tipdiv" style="width: 640px !important;">
+            <h2 id="htitle">设置收货信息</h2>
+            <div class="dialog-user-box" style="height: 380px;">
+                <div class="dtips">如因收货方原因取消订单将从货款扣除10元，交易税由您承担，当面交易10%（会员5%），黑市交易5%</div>
+                <div class="form-div clearfix">
+                    <label class="short-label">游戏区服：</label>
+                    <div id="dlgqufu" class="form-control-txt" style="width: 380px;">
+                        冒险岛2/不删档测试玩具城
+                    </div>
+                </div>
+                <div class="form-div clearfix" id="tradingType">
+                    <label class="short-label">交易方式：</label>
+                    <div class="form-control-txt" style="width: 380px;">
+                        <label>
+                            <input type="checkbox" checked="checked">当面交易
+                        </label>
+                        <label>
+                            <input type="checkbox" checked="checked">黑市交易
+                        </label>
+                    </div>
+                </div>
+                <div class="form-div clearfix">
+                    <label class="short-label">收货比例：</label>
+                    <div class="form-control-txt" style="width: 145px;">
+                        1元=<input id="txtscale" type="text" class="input" style="width: 80px; float: none;" />万金
+                    </div>
+                    <em class="dw-c uname" id="ConfigEditScaleText" style="display: none">推荐比例：<i style="color: red;">1元=xxx万金</i></em>
+                    <span id="currentScale" style="display: none"></span><span id="inputScale" style="display: none"></span>
+                </div>
+                <div class="form-div clearfix">
+                    <label class="short-label">收货总数量：</label>
+                    <input type="text" id="txtmax" class="input" maxlength="9" style="width: 140px;" onkeyup="doCount(this)" />
+                    <em class="dw-c uname" id="minNumTip" style="display: none">不能低于100</em>
+                </div>
+                <div class="form-div clearfix">
+                    <label class="short-label">收货角色名：</label>
+                    <input type="text" id="txtroleName" class="input" maxlength="20" style="width: 140px;" />
+                </div>
+                <div class="form-div clearfix">
+                    <label class="short-label">收货速度：</label>
+                    <div class="form-control-txt" style="width: 350px;">
+                        <label class="tipso_style" data-tipso="预计3分钟内能收到货">
+                            <input type="radio" name="speed" onclick="setScale(1)" value="1" />
+                            加急</label>
+                        <label class="tipso_style" data-tipso="预计10分钟内能收到货">
+                            <input type="radio" name="speed" onclick="setScale(0)" value="0" />
+                            普通
+                        </label>
+                    </div>
+
+                </div>
+                <div class="form-btngrounp clearfix">
+                    <a href="javascript:" onclick="paySh()" id="btnpay">支付货款 0.00元</a>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" id="gbPop" style="position: absolute; top: 18px; right: 20px; font-size: 18px; color: rgb(136, 136, 136); text-align: center; text-decoration: none; font-family: Verdana; font-weight: bold; z-index: 10001;">×</a>
+    </div>
+
+    <!-- 冒险岛2 -->
+    <!---->
+    <style>
+        .mxd_fd {position: fixed; right: 5px;width: 110px;height: 230px;top:247px;background-size:cover;z-index: 99;}
+        .mxd_fd img{width: 100%;}
+    </style>
+    <!--账号商品预览-->
+    <!--账号商品预览结束-->
+    <!--[if lt IE 9]>
+        <script src="//s.img898.com/www/js/json2.js?v=z70c639dv"></script>
+    <![endif]-->
+    <script src="//s.img898.com/mq??www/js/YourTracksAndGuessLike.js,www/js/CreateMultipleOrders.js,www/js/tipso/tipso.js,www/js/cookies.js,www/js/checkPayWay.js,www/js/newTradePBuy.js,www/js/gwc/jQuery-shopping.js,www/js/newTradePageSet.js,www/js/alertDiv.js&v=z70c639dv"></script>
+
+    
+    <script type="text/javascript" src="/static/inc/gameserver.js"></script>
+    
+    <script src="//s.img898.com/js/dialog-plus.js?v=z70c639dv"></script>
+    <script src="//s.img898.com/js/PopUpLayer.js?v=z70c639dv"></script>
+    <script type="text/javascript" src="//imglist.img898.com/baidu/www.js"></script>
+    <script type="text/javascript" src="//s.img898.com/js/base64.js"></script>
+    <script src="//s.img898.com/js/AirLogin.js?v=z70c639dv"></script>
+    
+    <link rel="stylesheet" href="//s.img898.com/www/js/tipso/tipso.css?v=z70c639dv" />
+    
+
+    <script src="//s.img898.com/mq??www/js/artdialog/dialog-min.js,www/js/retailDnfMall.js&v=z70c639dv"></script>
+
+    
+
+    <script type="text/javascript">
+    	function isTencentGames(){
+			var gameid = parseInt($("#hidGameID").val());
+			var gameIds=[95,125,132,152,162,164,170,171,207,209,213,215,216,217,218,227,234,244,245,247,249,266,280,335,337,365,369,370,372,373,374,379,382,384,385,402,403,424,430,433,446,447,451,474,475,478,487,508,512,513,521,522,527,529,562]
+			if(gameIds.indexOf(parseInt(gameid))!=-1 && $("#hidcTypeName").val()=="游戏账号"){
+				$("#sunplant").show();
+			}else{
+				$("#sunplant").hide();
+			}
+		}
+		    	
+    	
+    	
+    	//DNF 广告 图片链接动态修改;
+    	var imgHref = "//www.uu898.com/newTrade.aspx?gm=95&c=-6"
+    	if($("#searchAreaId").val()!=-1){
+    		imgHref += "&area=" + $("#searchAreaId").val();
+    	}
+    	if($("#searchServerId").val()!=-1){
+    		imgHref += "&srv=" + $("#searchServerId").val();
+    	}
+    	//  ----------------
+    	$(".imgHref").attr("href",imgHref);
+        function obuz() {
+            // 有值，设置弹窗
+            $("#actPopDFJ").val("clicked");
+            login2();
+        }
+        function closeTh() {
+            $(".pop-tips-uz-fly").hide();
+            $(".opciaty11_17").css("display", "none");
+        }
+        function closeTh11_24() {
+            $(".pop-tips-uz-fly11_24").hide();
+            $(".opciaty11_17").css("display", "none");
+        }
+        function closeThP() {
+            $("#showUzbuvdiv11_13").hide();
+            $(".opciaty11_17").hide();
+        }
+        function closeSa() {//弹窗关闭按钮
+            $(".pop-tips-uz-fly").hide()
+            $(".opciaty11_17").css("display", "none");
+        }
+        function closeSa11_24() {
+            //  		closeThis();
+            $(".pop-tips-uz-fly11_24").hide()
+            $(".opciaty11_17").css("display", "none");
+            loginM('http://Air.uu661.com/Air/?sourceId=95');
+        }
+        $("#uzclose2").click(function () {
+            $(".widthpop560").css("display", "none");
+            $(".black_overlay").css("display", "none");
+        })
+        $(".uz-active-img").click(function () {
+            $(".uz-active-discount").css("display", "none");
+            $("#blackwrapBg").css("display", "none");
+        })
+
+        // 需求变更。找相似改为找低价。只在精品装备上显示找低价按钮  editor: kamihati 2017-2-11
+        function SetGame385Like() {
+            var divList = $("div[forlike=true]");
+            // 处理遮罩层的显示隐藏
+            divList.parent().mouseover(function () { $(this).find("div[forlike=true]").css("display", "block"); });
+            // 处理遮罩层的隐藏
+            divList.parent().mouseleave(function () { $(this).find("div[forlike=true]").css("display", "none"); });
+        }
+       
+        // 结束
+        function login(uprice, commodityId) {
+            document.domain = "uu898.com";
+            var chkResult = "1";
+            try {
+                var arr = document.cookie.match(new RegExp("(^| )ASPNETSESSIONGUID=([^;]*)(;|$)"));
+                if (arr == null || arr == "") {
+                    chkResult = "0";
+                }
+            }
+            catch (er) { }
+            if (chkResult == "0") {
+                $.ajax({//未登录免费兑换此商品按钮点击统计
+                    url: "/ashx/ifCanUserZuan.ashx?action=clickBanner" + "&gid=" + $('#searchGameId').val() + "&bid=1",
+                    async: false,
+                    success: function (data) {
+
+                    }
+                });
+                PopUpLayer('//user.uu898.com/NewLogin.aspx', '648', '340');
+                return false;
+            }
+            else {
+                $.ajax({//已登录免费兑换此商品按钮点击统计
+                    url: "/ashx/ifCanUserZuan.ashx?action=clickBanner" + "&gid=" + $('#searchGameId').val() + "&bid=1",
+                    async: false,
+                    success: function (data) {
+
+                    }
+                });
+                showUzJingPai2(uprice, commodityId);
+                //              showThis(uprice, commodityId);
+                //return true;
+            }
+        }
+        function login2(uprice, commodityId) {
+            document.domain = "uu898.com";
+            var chkResult = "1";
+            try {
+                var arr = document.cookie.match(new RegExp("(^| )ASPNETSESSIONGUID=([^;]*)(;|$)"));
+                if (arr == null || arr == "") {
+                    chkResult = "0";
+                }
+            }
+            catch (er) { }
+            if (chkResult == "0") {
+                $.ajax({//未登录获取U钻按钮点击统计
+                    url: "/ashx/ifCanUserZuan.ashx?action=clickBanner" + "&gid=" + $('#searchGameId').val() + "&bid=2",
+                    async: false,
+                    success: function (data) {
+
+                    }
+                });
+                PopUpLayer('//user.uu898.com/NewLogin.aspx', '648', '340');
+                return false;
+            }
+            else {
+                $.ajax({//已登陆获取U钻按钮点击统计
+                    url: "/ashx/ifCanUserZuan.ashx?action=clickBanner" + "&gid=" + $('#searchGameId').val() + "&bid=2",
+                    async: false,
+                    success: function (data) {
+
+                    }
+                });
+                $(".alert_p_1225 span").hide()
+                showUzJingPai();
+                //              showThisUZ(uprice, commodityId);
+                //return true;
+            }
+        }
+        function islogin(uprice, commodityId) {
+            document.domain = "uu898.com";
+            var chkResult = "1";
+            try {
+                var arr = document.cookie.match(new RegExp("(^| )ASPNETSESSIONGUID=([^;]*)(;|$)"));
+                if (arr == null || arr == "") {
+                    chkResult = "0";
+                }
+            }
+            catch (er) { }
+            if (chkResult == "0") {
+                PopUpLayer('//user.uu898.com/NewLogin.aspx', '648', '340');
+            }
+            else {
+                showThis(uprice, commodityId);
+            }
+        }
+
+        //购物车相关判断start
+        //购物车展开、显示、关闭
+        
+        opencart(25083);
+        
+
+        $(".gwc-tit").click(function () {
+            if ($("#gwc_box0").css("display") == "none") {
+                $("#gwc_box0").css("display", "block");
+                $(".gwc_list").animate({ right: '0' }, 500);
+            } else {
+                $(".gwc_list").animate({ right: '-1200px' }, 500, function () { $("#gwc_box0").css("display", "none"); });
+            }
+	        
+            opencart(25083);
+	        
+            showcart();
+        });
+
+        
+        gwc_tit("0");
+        $(window).resize(function () {
+            gwc_tit("0");
+            var left = ($(document).width() - $("#gwc_box0").width()) / 2;
+            scroll_setOpen();
+        });
+        $(window).scroll(function () {
+            var gwcTSta = 0
+            var posFix = $(".float_gwc").position().top - 360;
+            var temScreen = $(".gwc-tit").css("left")
+            if ($(this).scrollTop() >= posFix) {
+                $(".w_screen").css({ 'position': 'absolute', 'top': $(".middle_new").height(), 'bottom': 'auto' })
+                $(".gwc-tit").css({ 'position': 'absolute', 'right': '-42px', 'left': 'auto' })
+            } else {
+                $(".w_screen").css({ 'position': 'fixed', 'right': 'auto', 'width': $("document").width, 'top': 'auto', 'bottom': '0' })
+
+                if ($("html").attr("style")) {
+                    gwc_tit(temScreen);
+                } else {
+                    gwc_tit("0");
+                }
+            }
+            if ($(window).width() < 1200) {
+                $(".gwc-tit").css({ "right": "0" })
+            }
+        });
+        
+
+        //购物车相关判断end
+
+        
+        setAreaList(95);
+        setCtypeList(95);
+        
+        setServerList(2343);
+        
+        // 处理特权商品
+        InitHalfPrice("95", "25083", "-3", $("#ulHalfPrice"));
+        
+        $(function () {
+
+        
+            $(".mode_dis2").mouseenter(function () {
+                $(".jj_btn:visible").find("img").remove();
+                $(this).css("background", "#a53370");
+                $('<img>', {
+                    src: '//s.img898.com/www/png/opitamz/list02.gif'
+                }).appendTo(".jj_btn:visible");
+            });
+            $(".mode_dis2").mouseleave(function () {
+                $(".jj_btn:visible").find("img").remove();
+                $(this).css("background", "#bd4e89");
+                $('<img>', {
+                    src: '//s.img898.com/www/png/opitamz/list02a.png'
+                }).appendTo(".jj_btn:visible");
+            });
+            
+        })
+
+        $("#uzclose").on("click", function () { $(".pop-tipsDDZ").hide(); $(".black_overlay").hide(); })
+
+        $("#mysh,#jssh").click(function () {
+            islogin();
+            $("#txtmax").val("");
+            $('#btnpay').text("支付货款 0.00元");
+            var box = $("#tradingType").find("div").eq(0);
+            var param = { gameid: $('#searchGameId').val(), ctypeid: $('#commodityTypeId').val(), serverid: $('#searchServerId').val() };
+            $.post("/inc/shconfig.ashx?opt=tradetype", param, function (data) {
+                if (data) {
+                    var typeList = data.split(",");
+                    var html = "";
+                    for (var i = 0; i < typeList.length; i++) {
+                        if (!typeList[i])
+                            continue;
+                        html += '<label for="setTradeType' + i + '"><input type="checkbox" id="setTradeType' + i + '" name="setTradeType" '
+                            + ' value="' + typeList[i] + '">' + typeList[i] + '</label>';
+                    }
+
+                    html += '<br /><div id="divSetTradeTypeMsg" style="font-size:12px; color:red;"></div>';
+                    box.html(html);
+                    box.show();
+                } else {
+                    box.empty();
+                }
+
+            });
+            $.post("/inc/shconfig.ashx?opt=getscale", param, function (res) {
+                if (res != "" && res != "0") {
+                    $("#ConfigEditScaleText").show();
+                    $("#ConfigEditScaleText i").text("1元=" + res + "万金");
+                    var scale = res;
+                    $("#txtscale").val(scale);
+                    $("#currentScale").text(scale);
+                    $("#minNumTip").text("不能低于" + Math.ceil(scale * 20) + "万金");
+                }
+            });
+            $("#dlgqufu").text($("#gamename").text() + "/" + $("#areaname").text() + "/" + $("#servername").text());
+            $("#popSH").show();
+            $(".black_overlay").css("height", $(document).height()).show();
+            if ("False" == "False") {
+                $("#txtscale").attr("disabled", "disabled");
+            }
+            var tip = "";
+            $("#popSH label.tipso_style").eq(0).attr("data-tipso", tip.split('|')[0]);
+            $("#popSH label.tipso_style").eq(1).attr("data-tipso", tip.split('|')[1]);
+            $("#txtmax").keyup(function () {
+                var reg = /^[0-9]*[1-9][0-9]*$/g;
+                if (!reg.test($(this).val())) {
+                    $(this).val("");
+
+                } else {
+                    var l = parseInt($(this).val());
+                    $(this).val(l);
+                    doCount(this);
+                }
+            });
+            $("#txtmax").focus(function () {
+                $("#minNumTip").text("不能低于" + Math.ceil($("#txtscale").val() * 20) + "万金").show();
+            });
+            $("#txtmax").blur(function () {
+                $("#minNumTip").hide();
+                if (parseInt($("#txtmax").val()) < Math.ceil($("#txtscale").val() * 20)) {
+                    $("#minNumTip").text("不能低于" + Math.ceil($("#txtscale").val() * 20) + "万金").show();
+                }
+            });
+            $("#txtscale").keyup(function () {
+                var reg = /^[0-9]+\.{0,1}[0-9]{0,2}$/g;
+                if (!reg.test($(this).val())) {
+                    $(this).val("");
+
+                } else {
+                    doCount($("#txtmax")[0]);
+                }
+            });
+        })
+        $("#gbPop").click(function () {
+            $("#popSH").hide();
+            $(".black_overlay").hide();
+        })
+        function showSh(obj) {
+            islogin();
+            $("#txtmax").val("");
+            $('#btnpay').text("支付货款 0.00元");
+            var box = $("#tradingType").find("div").eq(0);
+            var param = { gameid: $('#searchGameId').val(), ctypeid: $('#commodityTypeId').val(), serverid: $('#searchServerId').val() };
+            $.post("/inc/shconfig.ashx?opt=tradetype", param, function (data) {
+                if (data) {
+                    var typeList = data.split(",");
+                    var html = "";
+                    for (var i = 0; i < typeList.length; i++) {
+                        if (!typeList[i])
+                            continue;
+                        html += '<label for="setTradeType' + i + '"><input type="checkbox" id="setTradeType' + i + '" name="setTradeType" '
+                            + ' value="' + typeList[i] + '">' + typeList[i] + '</label>';
+                    }
+
+                    html += '<br /><div id="divSetTradeTypeMsg" style="font-size:12px; color:red;"></div>';
+                    box.html(html);
+                    box.show();
+                } else {
+                    box.empty();
+                }
+
+            });
+            $.post("/inc/shconfig.ashx?opt=getscale", param, function (res) {
+                if (res != "" && res != "0")
+                    $("#ConfigEditScaleText").show();
+                $("#ConfigEditScaleText i").text("1元=" + res + "万金");
+            });
+            var scaleText = $(obj).parent().find("h6 span:eq(0)").text();
+            var scale = scaleText.match(/1元=(.*)万金/)[1];
+            $("#txtscale").val(scale);
+            $("#currentScale").text(scale);
+            $("#minNumTip").text("不能低于" + Math.ceil(scale * 20) + "万金");
+            $("#dlgqufu").text($(obj).parent().parent().find("p:eq(1)").text().replace('游戏区服：', ''));
+            $(".black_overlay").css("height", $(document).height()).show();
+            if ("False" == "False") {
+                $("#txtscale").attr("disabled", "disabled");
+            }
+            var tip = "";
+            $("#popSH label.tipso_style").eq(0).attr("data-tipso", tip.split('|')[0]);
+            $("#popSH label.tipso_style").eq(1).attr("data-tipso", tip.split('|')[1]);
+            $("#txtmax").keyup(function () {
+
+                var reg = /^[0-9]*[1-9][0-9]*$/g;
+                if (!reg.test($(this).val())) {
+                    $(this).val($(this).val().match(/^[0-9]*[1-9][0-9]*/g));
+                } else {
+                    var l = parseInt($(this).val());
+                    $(this).val(l);
+                    doCount(this);
+                }
+            });
+            $("#txtmax").focus(function () {
+                $("#minNumTip").text("不能低于" + Math.ceil($("#txtscale").val() * 20) + "万金").show();
+            });
+            $("#txtmax").blur(function () {
+                $("#minNumTip").hide();
+                if (parseInt($("#txtmax").val()) < Math.ceil($("#txtscale").val() * 20)) {
+                    $("#minNumTip").text("不能低于" + Math.ceil($("#txtscale").val() * 20) + "万金").show();
+                }
+            });
+            $("#txtscale").keyup(function () {
+                var reg = /^[0-9]+\.{0,1}[0-9]{0,4}$/g;
+                if (!reg.test($(this).val())) {
+                    $(this).val($(this).val().match(/^[0-9]+\.{0,1}[0-9]{0,4}/g));
+                } else {
+                    doCount($("#txtmax")[0]);
+                }
+            });
+        }
+        function doCount(obj) {
+            var sc = $(obj).val();
+            var bili = $("#txtscale").val();
+            if (bili != "0" && !isNaN(parseInt(bili))) {
+                $("#minNumTip").text("不能低于" + Math.ceil(bili * 20) + "万金");
+            }
+            if (bili != "0" && !isNaN(parseInt(sc)) && !isNaN(parseInt(bili))) {
+                var money = (parseInt((parseFloat(sc) / bili) * 100) / 100).toFixed(2);
+                $('#btnpay').text("支付货款 " + money + "元");
+            }
+        }
+        function setScale(type) {
+            var scale = $("#currentScale").text();
+            if (type == 1) {
+                $("#inputScale").text($("#txtscale").val());
+                $("#txtscale").val((scale - scale * 0.02).toFixed(4));
+                $("#txtscale").attr("disabled", "disabled");
+            }
+            else {
+                var inputScale = $("#inputScale").text();
+                if (inputScale != "")
+                    $("#txtscale").val(inputScale);
+                if ("False" == "True")
+                    $("#txtscale").removeAttr("disabled");
+            }
+            doCount($("#txtmax")[0]);
+        }
+        function paySh() {
+            var tradeType = "";
+            $("#tradingType div input").each(function () {
+                if (this.checked)
+                    tradeType += this.value + "|"
+            });
+            if (tradeType == "") {
+                alert("请选择交易方式");
+            }
+            else if ($("#txtscale").val() == "")
+                alert("请输入比例");
+            else if ($("#txtmax").val() == "")
+                alert("请输入最大收货数量");
+            else if ($("#txtroleName").val() == "")
+                alert("请输入收货角色名");
+            else if (parseInt($("#txtmax").val()) < Math.ceil($("#txtscale").val() * 20)) {
+                alert("最大收货数量不能小于" + Math.ceil($("#txtscale").val() * 20) + "万金");
+            }
+            else if (!$("#popSH input[name='speed']").eq(0)[0].checked && !$("#popSH input[name='speed']").eq(1)[0].checked) {
+                alert("请选择是否加急");
+            }
+            else {
+                var data = "&gameid=" + $('#searchGameId').val() + "&areaid=" + $('#searchAreaId').val() + "&serverid=" + $('#searchServerId').val()
+                    + "&ctypeid=" + $('#commodityTypeId').val() + "&scale=" + $('#txtscale').val() + "&max=" + $('#txtmax').val() + "&tradingType=" + encodeURIComponent(tradeType) + "&rolename=" + encodeURIComponent($("#txtroleName").val());
+                $.post("/inc/shconfig.ashx?opt=addshconfig&r=" + Math.random() + data, function (res) {
+                    res = $.parseJSON(res);
+                    if (res.msg == "") {
+                        location.href = "//user.uu898.com/newpay.aspx?id=" + res.commodityNo + "&order=32";
+                    }
+                    else {
+                        if (res.msg == "请登录")
+                            islogin();
+                        else
+                            alert(res.msg);
+                    }
+                });
+            }
+        }
+        
+
+</script>
+
+</body>
+
+	<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
+
+	<script type="text/javascript">
+		
+		$(function(){
+			
+		//alert($("#daqv").val());
+		
+		//$("#divCommodityLst").replaceWith(" ");
+			
+		$.ajax({
+						//几个参数需要注意一下
+							type: "POST",//方法类型
+							dataType: "json",//预期服务器返回的数据类型
+							url: "http://localhost:8080/dnf_jfinal/user/index" ,//url
+							data: {"type":"游戏币","daqv":$("#daqv").val(),"server":$("#server").val()},
+							success: function (result) {
+								$.each(result,function(name,value) {
+									if(name == "map"){
+										$("#userName").text(value);
+									}
+							           if(name == "records"){
+							        	   for(i in value){
+							        		  	$("#divCommodityLst").append('<ul id="ES20180626092055-73215" class="splb_list" ctypeid="-3"><li class="sp_li0 pos"><h2><a href="//www.uu898.com/newescortinfo-ES20180626092055-73215.html" target="_blank"><i class="sp-ico ico-bao"></i>'+ value[i].describe +'</a> </h2><div class="clearfix"><i class="spListP-ico blzj_img fl" style="margin-right:8px"></i></div><p>物品类型：'+ value[i].type +'</p><p class="qf_txt">游戏区服：<a href="/trade-95/" target="_blank">地下城与勇士</a> / <a href="/trade-95-2343/" target="_blank">'+ value[i].daqv +'区</a> / <a href="/trade-95-2343-s25083/" target="_blank">' + value[i].server + '区</a></p></li><li class="Red zuan_dh" >&yen;<span style="font-size: 18px;"> '+ value[i].money +'.00</span><div class="dhz dhzerlingyiqi">'+ value[i].zhuan +'<img src="//dzimg.img898.com/www1/uu661/images/zuan_16.png" class="z-img">免费兑换此商品</div></li><li class="sp_li3"><h5 title="">'+ value[i].inventory +'</h5></li><li class="sp_li1"><h6 title="每一元人民币对应的物品数量。"><span>&nbsp;</span><span>&nbsp;</span></h6><a href="javascript:void(0);" class="button_5" title="'+ value[i].inventory +'" id="'+ value[i].id +'" onclick="trade(this)">立即购买</a></li><li class="sp_li2"><h3><a ><i class="sp-ico ico-tuijianR"></i><span>推荐商品</span></a><br /><a></a><br /><a></a><br /><a></a><br /></h3><h4 class="disn"><a><i class="sp-ico ico-tuijianR"></i></a></h4></li></ul><div style="clear: both;"></div>');
+							        	   }
+							           }
+							           
+							       });
+							},
+							error : function() {
+								alert("异常11！");
+							}
+						});
+		});
+		
+		
+		function update(type){
+			
+			//$("#divCommodityLst").replaceWith(" ");
+			//$("#divCommodityLst").load(location.href+"#divCommodityLst"); 
+			
+			$.ajax({
+				//几个参数需要注意一下
+					type: "POST",//方法类型
+					dataType: "json",//预期服务器返回的数据类型
+					url: "http://localhost:8080/dnf_jfinal/good/find" ,//url
+					data: {"type":$(type).text(),"daqv":$("#daqv").val(),"server":$("#server").val()},
+					success: function (result) {
+						$.each(result,function(name,value) {
+					        	   for(i in value){
+					        		  	if(i == 0){
+					        		  		$("#divCommodityLst").html('<ul id="ES20180626092055-73215" class="splb_list" ctypeid="-3"><input type="hidden" value="'+ value[i].id +'" /><li class="sp_li0 pos"><h2><a href="//www.uu898.com/newescortinfo-ES20180626092055-73215.html" target="_blank"><i class="sp-ico ico-bao"></i>'+ value[i].describe +'</a> </h2><div class="clearfix"><i class="spListP-ico blzj_img fl" style="margin-right:8px"></i></div><p>物品类型：'+ value[i].type +'</p><p class="qf_txt">游戏区服：<a href="/trade-95/" target="_blank">地下城与勇士</a> / <a href="/trade-95-2343/" target="_blank">'+ value[i].daqv +'区</a> / <a href="/trade-95-2343-s25083/" target="_blank">' + value[i].server + '区</a></p></li><li class="Red zuan_dh" >&yen;<span style="font-size: 18px;"> '+ value[i].money +'.00</span><div class="dhz dhzerlingyiqi">'+ value[i].zhuan +'<img src="//dzimg.img898.com/www1/uu661/images/zuan_16.png" class="z-img">免费兑换此商品</div></li><li class="sp_li3"><h5 title="">'+ value[i].inventory +'</h5></li><li class="sp_li1"><h6 title="每一元人民币对应的物品数量。"><span>&nbsp;</span><span>&nbsp;</span></h6><a class="button_5" title="'+ value[i].inventory +'" id="'+ value[i].id +'" onclick="trade(this)">立即购买</a></li><li class="sp_li2"><h3><a ><i class="sp-ico ico-tuijianR"></i><span>推荐商品</span></a><br /><a></a><br /><a></a><br /><a></a><br /></h3><h4 class="disn"><a><i class="sp-ico ico-tuijianR"></i></a></h4></li></ul><div style="clear: both;"></div>');
+					        		  	}else{
+						        		  	$("#divCommodityLst").append('<ul id="ES20180626092055-73215" class="splb_list" ctypeid="-3"><input type="hidden" value="'+ value[i].id +'" /><li class="sp_li0 pos"><h2><a href="//www.uu898.com/newescortinfo-ES20180626092055-73215.html" target="_blank"><i class="sp-ico ico-bao"></i>'+ value[i].describe +'</a> </h2><div class="clearfix"><i class="spListP-ico blzj_img fl" style="margin-right:8px"></i></div><p>物品类型：'+ value[i].type +'</p><p class="qf_txt">游戏区服：<a href="/trade-95/" target="_blank">地下城与勇士</a> / <a href="/trade-95-2343/" target="_blank">'+ value[i].daqv +'区</a> / <a href="/trade-95-2343-s25083/" target="_blank">' + value[i].server + '区</a></p></li><li class="Red zuan_dh" >&yen;<span style="font-size: 18px;"> '+ value[i].money +'.00</span><div class="dhz dhzerlingyiqi">'+ value[i].zhuan +'<img src="//dzimg.img898.com/www1/uu661/images/zuan_16.png" class="z-img">免费兑换此商品</div></li><li class="sp_li3"><h5 title="">'+ value[i].inventory +'</h5></li><li class="sp_li1"><h6 title="每一元人民币对应的物品数量。"><span>&nbsp;</span><span>&nbsp;</span></h6><a class="button_5" title="'+ value[i].inventory +'" id="'+ value[i].id +'" onclick="trade(this)">立即购买</a></li><li class="sp_li2"><h3><a ><i class="sp-ico ico-tuijianR"></i><span>推荐商品</span></a><br /><a></a><br /><a></a><br /><a></a><br /></h3><h4 class="disn"><a><i class="sp-ico ico-tuijianR"></i></a></h4></li></ul><div style="clear: both;"></div>');
+					        		  	}
+					        	   }
+					       });
+					},
+					error : function() {
+						alert("异常11！");
+					}
+				});
+				
+		}
+		
+		
+		function trade(my){
+			$.ajax({
+				//几个参数需要注意一下
+					type: "POST",//方法类型
+					//dataType: "json",//预期服务器返回的数据类型
+					url: "http://localhost:8080/dnf_jfinal/good/trade" ,//url
+					data: {"id":my.id,"inventory":my.title},
+					success: function (result) {
+						window.open("take.html", "newwindow", "height=500, width=500,top=200,left=500 toolbar=no, menubar=no, scrollbars=no, resizable=no, location=yes, status=no");
+						alert("购买成功");
+						window.location.href="index.html";
+					},
+					error : function() {
+						alert("异常11！");
+					}
+				});
+		}
+		
+		
+	</script>
+
+</html>

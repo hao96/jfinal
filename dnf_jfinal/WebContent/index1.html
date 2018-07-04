@@ -1,0 +1,99 @@
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/jscript" src="js/jquery.min.js"></script>
+		<script type="text/jscript" src="js/jquery.easyui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/test.css" />
+	</head>
+	
+	<body>
+		<div style="width: 800px ; height: 800px; margin: auto;">
+			<br />
+			<div style="width: 300px;height: 20px; margin: auto; margin-top: 50px;">
+				管理员录入商品信息
+			</div>
+			<br />
+		
+			<br />
+			<div style="width: 600px; height: 20px; margin: auto; margin-top: 50px;">
+				<div>
+					<form action="#" method="post" id="input">
+						<table>
+							<tr>
+								<th>商品描述</th>
+								<th><input name="goods.describe" type="text"/></th>
+							</tr>
+							<tr>
+								<th>商品类型</th>
+								<th><select name="goods.type">
+									<option value="游戏币">游戏币</option>
+									<option value="材料">材料</option>
+									<option value="装备">装备</option>
+									<option value="深渊票">深渊票</option>
+									<option value="点券">点券</option>
+									<option value="游戏账号">游戏账号</option>
+								</select></th>
+							</tr>
+							<tr>
+								<th>所在大区</th>
+								<th><select name="goods.daqv">
+									<option value="吉林">吉林区</option>
+									<option value="北京">北京区</option>
+								</select></th>
+							</tr>
+							<tr>
+								<th>所在服务器</th>
+								<th><select name="goods.server">
+									<option value="1">1区</option>
+									<option value="2">2区</option>
+								</select></th>
+							</tr>
+							<tr>
+								<th>商品价格</th>
+								<th><input name="goods.money" type="text"/></th>
+							</tr>
+							<tr>
+								<th>商品库存</th>
+								<th><input name="goods.inventory" type="text"/></th>
+							</tr>
+							<tr>
+								<th>等价钻石</th>
+								<th><input name="goods.zhuan" type="text"/></th>
+							</tr>
+							<tr>
+								<th>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+								<th><input id="button" type="button" value="录入"/></th>
+							</tr>
+						</table>
+						
+						<br />
+						<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		$("#button").click(function(){
+			$.ajax({
+				//几个参数需要注意一下
+					type: "POST",//方法类型
+					dataType: "text",//预期服务器返回的数据类型
+					url: "http://localhost:8080/dnf_jfinal/good/input" ,//url
+					data: $('#input').serialize(),
+					success: function (result) {
+						alert(result);
+					},
+					error : function() {
+						alert("异常！");
+					}
+				});
+		})
+	</script>
+	
+</html>

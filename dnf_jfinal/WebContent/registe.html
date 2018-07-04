@@ -1,0 +1,59 @@
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/jscript" src="js/jquery.min.js"></script>
+		<script type="text/jscript" src="js/jquery.easyui.min.js"></script>
+	</head>
+	
+	<body>
+		<div style="width: 800px ; height: 800px;margin: auto;">
+			<br />
+			<div style="width: 120px;height: 20px; margin: auto; margin-top: 50px;">
+				<h3>注册用户信息</h3>
+			</div>
+			<br />
+			<br />
+			<div style="width: 600px; height: 20px; margin: auto; background-color: aqua;">
+				<img src="img/dnf.png" />
+			</div>
+			<br />
+			<br />
+			<div style="width: 600px; height: 20px; margin: auto; margin-top: 300px;">
+				<form action="#" method="post" id="registe">
+					<div>
+						用户名：<input name="user.name" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						密&nbsp;&nbsp;码&nbsp;：<input name="user.password" />
+						<input name="user.admin" type="hidden" value="0" />
+						<input id="zhuce" type="button" value="注册"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		$("#zhuce").click(function(){
+				//alert($('#name').val())
+		
+				$.ajax({
+					//几个参数需要注意一下
+						type: "POST",//方法类型
+						//dataType: "json",//预期服务器返回的数据类型
+						url: "http://localhost:8080/dnf_jfinal/user/registe" ,//url
+						data: $('#registe').serialize(),
+						success: function (result) {
+							alert(result);
+							if(result == "注册成功"){
+								window.location.href="http://localhost:8080/dnf/login.html"
+							}
+						},
+						error : function() {
+							alert("异常！");
+						}
+					});
+		
+				});
+	</script>
+	
+</html>
